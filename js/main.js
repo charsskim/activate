@@ -9,5 +9,7 @@ btns.forEach((btn, idx) => {
 
 		//클릭한 순번에 해당하는 버튼만 활성화
 		btns[idx].classList.add('on');
+		boxs.forEach((el) => el.classList.remove('on'));
+		boxs[idx].classList.add('on');
 	});
 });
